@@ -1,0 +1,94 @@
+<!doctype html>
+<html lang="zh-CN" data-edit-key="deep-seek-orbis-homepage" data-export-name="deep-seek个人主页">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="deep seek 的中文个人主页：用 Codex 练习、整理和记录。">
+  <title>deep seek · Orbis.Nft</title>
+  <style>
+    :root{--navy:#010828;--navy2:#06165a;--cream:#eff4ff;--neon:#6fff00;--muted:#a9b9d6;--glass:rgba(255,255,255,.055);--line:rgba(239,244,255,.18);--radius:30px;--shadow:0 24px 80px rgba(0,0,0,.3)}
+    *{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:var(--navy);color:var(--cream);font-family:ui-monospace,SFMono-Regular,Consolas,"Liberation Mono",monospace;line-height:1.65}a{color:inherit}button{font:inherit;color:inherit;cursor:pointer}.site{overflow:hidden;background:radial-gradient(circle at 50% 0%,#0e2b78 0,#010828 38%,#01051c 100%)}
+    .grain{pointer-events:none;position:fixed;inset:0;z-index:50;opacity:.12;mix-blend-mode:screen;background-image:url("data:image/svg+xml,%3Csvg viewBox='0 0 180 180' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='.8' numOctaves='3' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)' opacity='.38'/%3E%3C/svg%3E")}
+    .wrap{width:min(1180px,calc(100% - 40px));margin:0 auto}.glass{background:var(--glass);border:1px solid var(--line);backdrop-filter:blur(14px);-webkit-backdrop-filter:blur(14px);box-shadow:inset 0 1px 1px rgba(255,255,255,.12),var(--shadow)}
+    .toolbar{position:fixed;right:18px;bottom:18px;z-index:80;display:flex;gap:8px;padding:8px;border-radius:999px;background:rgba(1,8,40,.88);border:1px solid var(--line);box-shadow:0 12px 32px #0008}.toolbar button{border:1px solid var(--line);background:transparent;border-radius:999px;padding:8px 13px;font-size:11px}.toolbar button:hover,.toolbar button[aria-pressed=true]{background:var(--neon);color:#071004;border-color:var(--neon)}
+    .hero{min-height:100svh;position:relative;display:flex;align-items:center;border-bottom-left-radius:34px;border-bottom-right-radius:34px;background:radial-gradient(circle at 61% 41%,rgba(53,98,211,.45),transparent 29%),linear-gradient(145deg,#010828,#06165a 58%,#010828)}.hero:after{content:"";position:absolute;inset:auto 0 0;height:26%;background:linear-gradient(transparent,var(--navy));pointer-events:none}.nav{position:absolute;z-index:2;top:22px;left:0;right:0;display:flex;align-items:center;justify-content:space-between;gap:20px}.brand{font-family:Impact,"Arial Narrow",sans-serif;font-size:20px;letter-spacing:.09em;text-transform:uppercase;white-space:nowrap}.navlinks{display:flex;gap:25px;padding:14px 28px;border-radius:999px;font-size:11px;text-transform:uppercase;letter-spacing:.12em}.navlinks a{text-decoration:none;opacity:.8}.navlinks a:hover{color:var(--neon);opacity:1}.nav-note{font-size:10px;color:var(--muted);text-align:right}.hero-grid{position:relative;z-index:1;display:grid;grid-template-columns:1.05fr .95fr;align-items:center;gap:50px;width:100%;padding:120px 0 80px}.eyebrow{color:var(--neon);font-size:12px;letter-spacing:.22em;text-transform:uppercase}.hero h1{max-width:720px;margin:20px 0 25px;font-family:Impact,"Arial Narrow",sans-serif;font-size:clamp(3.3rem,9vw,8.2rem);font-weight:900;line-height:.86;letter-spacing:.015em;text-transform:uppercase;text-wrap:balance}.hero h1 span{color:var(--cream)}.script{font-family:"Brush Script MT","Segoe Script",cursive;font-weight:400;color:var(--neon);font-size:1.4em;text-transform:none}.hero-copy{max-width:480px;color:var(--muted);font-size:13px}.hero-copy strong{color:var(--cream);font-weight:500}.hero-actions{display:flex;gap:12px;align-items:center;margin-top:28px}.pill{display:inline-flex;align-items:center;justify-content:center;min-height:44px;padding:0 17px;border:1px solid var(--line);border-radius:999px;text-decoration:none;font-size:11px;letter-spacing:.1em;text-transform:uppercase}.pill.primary{background:var(--neon);color:#071004;border-color:var(--neon);font-weight:800}.pill:hover{transform:translateY(-2px)}.hero-art{position:relative;min-height:520px;display:grid;place-items:center}.hero-art:before{content:"";position:absolute;width:72%;aspect-ratio:1;border-radius:50%;background:rgba(111,255,0,.16);filter:blur(45px);animation:pulse 5s ease-in-out infinite}.hero-art img{position:relative;width:min(100%,720px);filter:drop-shadow(0 28px 40px rgba(0,0,0,.35));animation:float 8s ease-in-out infinite}.art-label{position:absolute;right:4%;bottom:5%;padding:12px 15px;border-radius:18px;font-size:10px;color:var(--muted);letter-spacing:.08em;text-transform:uppercase}
+    section{padding:120px 0}.section-kicker{color:var(--neon);font-size:11px;text-transform:uppercase;letter-spacing:.2em}.section-title{margin:12px 0 22px;font-family:Impact,"Arial Narrow",sans-serif;font-size:clamp(2.3rem,6vw,5.3rem);line-height:.95;text-transform:uppercase;letter-spacing:.015em}.section-intro{max-width:580px;color:var(--muted);font-size:13px}.about{background:linear-gradient(180deg,var(--navy),#050f39)}.about-grid{display:grid;grid-template-columns:.8fr 1.2fr;gap:80px;align-items:start}.about-card{padding:28px;border-radius:var(--radius);font-size:14px;color:var(--muted)}.about-card p{margin:0 0 18px}.about-card p:last-child{margin-bottom:0}.quote{color:var(--cream);font-size:18px;line-height:1.45}.meta-line{display:flex;justify-content:space-between;gap:18px;padding:14px 0;border-bottom:1px solid var(--line);font-size:12px}.meta-line span:first-child{color:var(--neon);text-transform:uppercase}.meta-line span:last-child{text-align:right;color:var(--cream)}
+    .works{background:var(--navy)}.section-head{display:flex;align-items:end;justify-content:space-between;gap:25px;margin-bottom:35px}.works-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:22px}.work-card{display:block;min-height:285px;padding:20px;border-radius:var(--radius);position:relative;overflow:hidden;color:inherit;text-decoration:none;transition:transform .25s ease,background .25s ease}.work-card:hover,.work-card:focus-visible{transform:translateY(-5px);background:rgba(255,255,255,.1)}.work-card:focus-visible{outline:2px solid var(--neon);outline-offset:4px}.work-card:before{content:"";display:block;aspect-ratio:1.35;border-radius:22px;background:radial-gradient(circle at 45% 50%,rgba(111,255,0,.22),transparent 30%),linear-gradient(135deg,#112968,#07113d);border:1px solid rgba(255,255,255,.12)}.work-card h3{margin:18px 0 6px;font-family:Impact,"Arial Narrow",sans-serif;font-size:25px;letter-spacing:.03em;text-transform:uppercase}.work-card p{margin:0;color:var(--muted);font-size:12px}.status{position:absolute;right:30px;top:30px;padding:5px 9px;border:1px solid rgba(111,255,0,.45);border-radius:999px;color:var(--neon);font-size:10px}.work-empty{grid-column:1/-1;padding:26px;border-radius:var(--radius);color:var(--muted);font-size:12px}.work-empty strong{color:var(--cream);font-weight:500}
+    .learning{background:linear-gradient(145deg,#06165a,#010828)}.learning-grid{display:grid;grid-template-columns:1.2fr .8fr;gap:24px}.learning-main{padding:34px;border-radius:var(--radius);min-height:300px}.learning-main h3{font-family:Impact,"Arial Narrow",sans-serif;font-size:36px;line-height:1;margin:15px 0}.learning-main p{max-width:550px;color:var(--muted);font-size:13px}.learning-side{display:grid;gap:24px}.note{padding:25px;border-radius:var(--radius)}.note .number{font-family:Impact,"Arial Narrow",sans-serif;font-size:48px;color:var(--neon);line-height:1}.note h4{margin:10px 0 0;font-size:13px;text-transform:uppercase}.note p{margin:8px 0 0;color:var(--muted);font-size:11px}
+    .final{min-height:80vh;display:grid;place-items:center;text-align:center;position:relative;background:radial-gradient(circle at 50% 42%,rgba(39,100,207,.5),transparent 35%),#010828}.final h2{max-width:920px;margin:15px auto;font-family:Impact,"Arial Narrow",sans-serif;font-size:clamp(3.1rem,8vw,7.8rem);line-height:.86;text-transform:uppercase}.final p{max-width:500px;margin:25px auto;color:var(--muted);font-size:13px}.footer{padding:25px 0 35px;border-top:1px solid var(--line);color:var(--muted);font-size:10px}.footer-row{display:flex;justify-content:space-between;gap:15px;flex-wrap:wrap}.footer a{color:var(--cream);text-underline-offset:4px}.footer .credit{color:var(--neon)}
+    [contenteditable=true]{outline:2px dashed rgba(111,255,0,.6);outline-offset:5px}.reveal{animation:reveal .8s both}.motion-paused *, .motion-paused *:before, .motion-paused *:after{animation-play-state:paused!important;transition:none!important;scroll-behavior:auto!important}@keyframes float{0%,100%{transform:translateY(0) rotate(-1deg)}50%{transform:translateY(-15px) rotate(1deg)}}@keyframes pulse{0%,100%{opacity:.5;transform:scale(.9)}50%{opacity:.9;transform:scale(1.05)}}@keyframes reveal{from{opacity:0;transform:translateY(16px)}to{opacity:1;transform:none}}
+    @media (max-width:850px){.wrap{width:min(100% - 28px,640px)}.navlinks{display:none}.nav-note{display:none}.hero-grid,.about-grid,.learning-grid{grid-template-columns:1fr;gap:28px}.hero{min-height:auto}.hero-grid{padding:130px 0 80px}.hero-art{min-height:350px;order:-1}.hero-art img{width:min(100%,520px)}.hero h1{font-size:clamp(3.1rem,15vw,6.2rem)}.about-grid{gap:30px}.section-head{align-items:start;flex-direction:column}.works-grid{grid-template-columns:1fr}.work-empty{grid-column:auto}.learning-main{min-height:240px}.final{min-height:65vh}}
+    @media (max-width:480px){section{padding:85px 0}.hero-grid{padding:78px 0 38px;gap:2px}.hero-art{width:100%;min-height:196px;margin:0 auto}.hero-art img{width:min(76vw,280px);max-height:27svh;object-fit:contain}.art-label{right:2%;bottom:0;padding:6px 9px;font-size:8px}.hero h1{font-size:clamp(2.65rem,12vw,3.05rem);line-height:.9;margin:12px 0 16px}.hero .script{font-size:.92em;white-space:nowrap}.hero-copy{font-size:12px}.hero-actions{gap:8px;margin-top:18px}.hero-actions .pill{min-height:40px;padding:0 12px;font-size:10px;letter-spacing:.04em}.meta-line{align-items:flex-start;flex-direction:column;gap:4px}.meta-line span:last-child{text-align:left}.toolbar{right:10px;bottom:10px}.toolbar button{font-size:10px;padding:7px 9px}.final h2{font-size:3.15rem}}
+    @media (prefers-reduced-motion:reduce){html{scroll-behavior:auto}.hero-art img,.hero-art:before,.reveal{animation:none!important}.pill,.work-card{transition:none}}
+    @media (min-width:851px){.hero-grid{width:min(1180px,calc(100% - 40px));grid-template-columns:minmax(0,.84fr) minmax(0,1.16fr);gap:32px}.hero-grid>div:first-child{min-width:0}.hero h1{max-width:100%;font-size:clamp(3.3rem,6.3vw,6rem);line-height:.96}.hero .script{font-size:.98em;white-space:nowrap}}
+    @media (min-width:851px) and (max-height:800px){.hero-art .art-label{bottom:15%}}
+    .work-image{display:none;width:100%;aspect-ratio:1.35;object-fit:cover;border-radius:22px;border:1px solid rgba(255,255,255,.12)}
+    @media (min-width:851px){.work-card:before{display:none}.work-image{display:block}}
+  </style>
+</head>
+<body>
+  <div class="grain" aria-hidden="true"></div>
+  <div class="toolbar" aria-label="页面工具">
+    <button id="editToggle" type="button" aria-pressed="false">编辑</button>
+    <button id="motionToggle" type="button" aria-pressed="false">暂停动效</button>
+    <button id="exportButton" type="button">导出 HTML</button>
+  </div>
+  <main class="site">
+    <section class="hero" id="home">
+      <div class="wrap nav">
+        <div class="brand" data-edit-id="brand">Orbis.Nft</div>
+        <nav class="navlinks glass" aria-label="主导航"><a href="#about">关于我</a><a href="#works">作品</a><a href="#learning">学习记录</a><a href="#contact">结尾</a></nav>
+        <div class="nav-note">EARTH / SPACE<br>ILLUSTRATION VERSION</div>
+      </div>
+      <div class="wrap hero-grid">
+        <div>
+          <div class="eyebrow" data-edit-id="hero-kicker">deep seek · 个人主页</div>
+          <h1 data-edit-id="hero-title">向世界<br><span>介绍</span> <i class="script">deep seek</i></h1>
+          <p class="hero-copy" data-edit-id="hero-copy">正在用 AI 把想法变成作品。<br>我正在练习用 Codex 做自己的个人主页。<br>我喜欢把学到的东西整理成简单易懂的笔记。</p>
+          <div class="hero-actions"><a class="pill primary" href="#about">探索主页</a><a class="pill" href="#learning">查看学习记录</a></div>
+        </div>
+        <div class="hero-art"><img src="assets/earth-astronaut.png" alt="地球地平线前景中漂浮的宇航员插画"><div class="art-label glass">原创插画 · 无授权视频版本</div></div>
+      </div>
+    </section>
+
+    <section class="about" id="about">
+      <div class="wrap about-grid">
+        <div><div class="section-kicker">01 / About</div><h2 class="section-title" data-edit-id="about-title">Hello!<br><span class="script">这是我的</span><br>小星球</h2><p class="section-intro">正在用 AI 把想法变成作品。</p></div>
+        <div class="about-card glass reveal"><p class="quote" data-edit-id="about-quote">我正在练习用 Codex 做自己的个人主页。</p><p data-edit-id="about-body">我喜欢把学到的东西整理成简单易懂的笔记。这里会记录我的练习、作品和新发现。</p><div class="meta-line"><span>昵称</span><span data-edit-id="meta-name">deep seek</span></div><div class="meta-line"><span>定位</span><span data-edit-id="meta-position">正在用 AI 把想法变成作品</span></div><div class="meta-line"><span>兴趣</span><span data-edit-id="meta-interest">吃白米饭</span></div></div>
+      </div>
+    </section>
+
+    <section class="works" id="works">
+      <div class="wrap">
+        <div class="section-head"><div><div class="section-kicker">02 / Works</div><h2 class="section-title" data-edit-id="works-title">作品<br><span class="script">与发现</span></h2></div><div class="eyebrow">selected notes / no invented metrics</div></div>
+<div class="works-grid"><a class="work-card glass" href="#about" aria-label="查看本次个人主页的关于我说明"><span class="status">已完成</span><img class="work-image" src="assets/work-homepage.png" alt="本次个人主页首屏截图，展示 Orbis 深蓝太空风格、地球宇航员插画、介绍和按钮"><h3>本次个人主页</h3><p>完成中文个人主页、Orbis 地球视觉、响应式手机布局、暂停动效和离线 HTML 导出。</p></a><a class="work-card glass" href="#learning" aria-label="查看 Codex 七天入门练习学习记录"><span class="status">持续记录</span><img class="work-image" src="assets/work-learning-notes.png" alt="宇航员在地球轨道附近整理空白学习笔记的原创插画"><h3>Codex 7 天入门练习</h3><p>记录用 Codex 学习、整理资料并逐步完成个人主页的练习过程。</p></a><a class="work-card glass" href="#learning" aria-label="查看计划中的下一个小任务"><span class="status">计划中</span><img class="work-image" src="assets/work-next-orbit.png" alt="宇航员驶向地球轨道上远方环形轨道的原创插画"><h3>下一个小任务</h3><p>计划中：具体内容尚未提供；点击查看学习记录区的计划说明。</p></a></div>
+      </div>
+    </section>
+
+    <section class="learning" id="learning">
+      <div class="wrap learning-grid">
+        <div class="learning-main glass reveal"><div class="section-kicker">03 / Learning log</div><h2 data-edit-id="learning-title">Codex 7 天<br><span class="script">入门练习</span></h2><p data-edit-id="learning-copy">持续记录 AI 学习笔记，把每一次练习变成下一次动手创造的起点。</p><div class="pill" style="margin-top:16px">持续记录</div></div>
+        <div class="learning-side"><div class="note glass"><div class="number">01</div><h4>练习</h4><p>用 Codex 做自己的个人主页。</p></div><div class="note glass"><div class="number">02</div><h4>计划中</h4><p>具体下一项任务尚未提供，后续补充真实内容。</p></div></div>
+      </div>
+    </section>
+
+    <section class="final" id="contact"><div class="wrap"><div class="section-kicker">04 / Keep exploring</div><h2 data-edit-id="final-title">让记录<br><span class="script">继续发生</span></h2><p data-edit-id="final-copy">公开联系方式：qq583321756<br>这里不生成虚假的社交链接，主页会从真实资料继续生长。</p><a class="pill primary" href="#home">回到顶部</a></div></section>
+
+    <footer class="footer"><div class="wrap footer-row"><span>Orbis.Nft · deep seek · 插画版本</span><span class="credit">Based on Personal Homepage Skill by powerycy · <a href="https://github.com/shengjidaguai-china/personal-homepage-skill" target="_blank" rel="noreferrer">原项目</a></span></div></footer>
+  </main>
+  <script>
+    (()=>{
+      const root=document.documentElement, body=document.body, key=root.dataset.editKey+':'+location.pathname;
+      const edit=document.querySelector('#editToggle'), motion=document.querySelector('#motionToggle'), exportBtn=document.querySelector('#exportButton');
+      const nodes=[...document.querySelectorAll('[data-edit-id]')];
+      let edits={}; try{edits=JSON.parse(localStorage.getItem(key)||'{}')}catch(e){}
+      nodes.forEach(n=>{if(edits[n.dataset.editId])n.innerHTML=edits[n.dataset.editId]});
+      let editing=false;
+      edit.addEventListener('click',()=>{editing=!editing;edit.setAttribute('aria-pressed',editing);edit.textContent=editing?'完成编辑':'编辑';nodes.forEach(n=>{n.contentEditable=editing?'true':'false';if(editing)n.addEventListener('input',()=>{edits[n.dataset.editId]=n.innerHTML;localStorage.setItem(key,JSON.stringify(edits))},{once:false})})});
+      motion.addEventListener('click',()=>{const paused=body.classList.toggle('motion-paused');motion.setAttribute('aria-pressed',paused);motion.textContent=paused?'恢复动效':'暂停动效'});
+      exportBtn.addEventListener('click',()=>{const clone=document.documentElement.cloneNode(true);clone.querySelector('.toolbar')?.remove();clone.querySelector('.grain')?.remove();clone.querySelectorAll('[contenteditable]').forEach(n=>n.removeAttribute('contenteditable'));const html='<!doctype html>\n'+clone.outerHTML;const blob=new Blob([html],{type:'text/html;charset=utf-8'});const a=document.createElement('a');a.href=URL.createObjectURL(blob);a.download=(root.dataset.exportName||'homepage')+'.html';a.click();setTimeout(()=>URL.revokeObjectURL(a.href),1000)});
+      if(window.matchMedia('(prefers-reduced-motion: reduce)').matches){body.classList.add('motion-paused');motion.setAttribute('aria-pressed','true');motion.textContent='恢复动效'}
+    })();
+  </script>
+</body>
+</html>
