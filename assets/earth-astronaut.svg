@@ -1,0 +1,34 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 900" role="img" aria-labelledby="title desc">
+  <title id="title">原创地球与宇航员插画</title>
+  <desc id="desc">深蓝太空中的蓝色地球与漂浮的白色宇航员。</desc>
+  <defs>
+    <radialGradient id="space" cx="50%" cy="44%" r="64%"><stop offset="0" stop-color="#162f7d"/><stop offset="1" stop-color="#010828"/></radialGradient>
+    <radialGradient id="earth" cx="35%" cy="28%" r="72%"><stop offset="0" stop-color="#b5eeff"/><stop offset=".24" stop-color="#4ac8ec"/><stop offset=".7" stop-color="#1770bb"/><stop offset="1" stop-color="#062a68"/></radialGradient>
+    <linearGradient id="suit" x1="0" x2="1" y1="0" y2="1"><stop stop-color="#ffffff"/><stop offset="1" stop-color="#aebbd7"/></linearGradient>
+    <filter id="glow"><feGaussianBlur stdDeviation="10"/></filter>
+    <clipPath id="earthClip"><circle cx="430" cy="485" r="228"/></clipPath>
+  </defs>
+  <rect width="900" height="900" fill="url(#space)"/>
+  <g fill="#eff4ff" opacity=".78">
+    <circle cx="104" cy="142" r="3"/><circle cx="202" cy="278" r="2"/><circle cx="755" cy="142" r="3"/><circle cx="804" cy="356" r="2"/><circle cx="666" cy="72" r="2"/><circle cx="142" cy="710" r="2"/><circle cx="720" cy="760" r="3"/>
+  </g>
+  <circle cx="430" cy="485" r="255" fill="#6fff00" opacity=".12" filter="url(#glow)"/>
+  <circle cx="430" cy="485" r="230" fill="url(#earth)" stroke="#eff4ff" stroke-opacity=".5" stroke-width="4"/>
+  <g clip-path="url(#earthClip)" fill="#78d989" opacity=".65">
+    <path d="M175 405c73-42 122-65 173-62l35 40-29 35-64 7-41 51-62-15z"/>
+    <path d="M431 260l67 42-15 55-60 35-27-47 20-42z"/>
+    <path d="M565 410l83-13 48 49-26 48-72-8-45-36z"/>
+    <path d="M380 570l63-32 46 41-18 85-64 38-38-57z"/>
+    <path d="M588 610l74-17 40 54-71 48-62-28z"/>
+  </g>
+  <ellipse cx="430" cy="704" rx="274" ry="34" fill="none" stroke="#6fff00" stroke-opacity=".66" stroke-width="5" transform="rotate(-12 430 704)"/>
+  <g transform="translate(610 164) rotate(14)">
+    <path d="M45 92c-12-25 1-55 29-62 31-8 57 10 62 39l-4 38-74 19z" fill="url(#suit)" stroke="#eff4ff" stroke-width="4"/>
+    <rect x="54" y="52" width="62" height="42" rx="18" fill="#132458" stroke="#b9d8ef" stroke-width="4"/>
+    <path d="M48 116l76-12 20 93-53 34-54-45z" fill="url(#suit)" stroke="#eff4ff" stroke-width="4"/>
+    <path d="M45 123l-45 35 14 30 53-17zM121 115l51 9 6 31-54 9z" fill="url(#suit)" stroke="#eff4ff" stroke-width="4"/>
+    <path d="M54 204l-13 67 36 6 22-64zM103 210l27 62 33-12-24-71z" fill="url(#suit)" stroke="#eff4ff" stroke-width="4"/>
+    <circle cx="25" cy="174" r="10" fill="#6fff00"/><circle cx="169" cy="139" r="8" fill="#6fff00"/>
+  </g>
+  <text x="52" y="820" fill="#eff4ff" opacity=".7" font-family="monospace" font-size="16" letter-spacing="4">ORIGINAL EARTH / ASTRONAUT STUDY</text>
+</svg>
